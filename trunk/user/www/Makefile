@@ -211,6 +211,9 @@ endif
 ifneq ($(CONFIG_FIRMWARE_INCLUDE_ALIDDNS),y)
 	rm -f $(INSTALLDIR)/www/Advanced_aliddns.asp
 endif
+ifneq ($(CONFIG_FIRMWARE_INCLUDE_cloudflare),y)
+	rm -f $(INSTALLDIR)/www/Advance_cloudflare.asp
+endif
 ifneq ($(CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME),y)
 	rm -f $(INSTALLDIR)/www/Advanced_adguardhome.asp
 endif
